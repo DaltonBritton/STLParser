@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STLParser", "STLParser\STLParser.csproj", "{36E16700-7B01-4993-B551-2E40C5F18406}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "STLParser.Tests", "STLParser.Tests\STLParser.Tests.csproj", "{332033F3-73F6-4DE4-AC30-870E0595EA4B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{36E16700-7B01-4993-B551-2E40C5F18406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36E16700-7B01-4993-B551-2E40C5F18406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36E16700-7B01-4993-B551-2E40C5F18406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36E16700-7B01-4993-B551-2E40C5F18406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{332033F3-73F6-4DE4-AC30-870E0595EA4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{332033F3-73F6-4DE4-AC30-870E0595EA4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{332033F3-73F6-4DE4-AC30-870E0595EA4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{332033F3-73F6-4DE4-AC30-870E0595EA4B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

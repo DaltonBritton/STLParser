@@ -1,6 +1,6 @@
 using System.Numerics;
 
-namespace BaseTypes;
+namespace STLParser;
 
 [Serializable]
 public struct Triangle

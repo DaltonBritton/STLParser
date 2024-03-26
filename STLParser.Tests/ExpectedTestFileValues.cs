@@ -1,11 +1,10 @@
-using BaseTypes;
 using System.Numerics;
 
 namespace STLParser.Tests;
 
 public static class ExpectedTestFileValues
 {
-    public readonly static Triangle[] TestCube =
+    public static readonly Triangle[] TestCube =
     [
         new Triangle(-Vector3.UnitZ, new(-10, -10, 0), new Vector3(-10, 10, 0), new(10, -10, 0)),
         new Triangle(-Vector3.UnitZ, new(-10, 10, 0), new Vector3(10, 10, 0), new(10, -10, 0)),

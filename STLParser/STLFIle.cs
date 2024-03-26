@@ -1,6 +1,4 @@
-﻿using BaseTypes;
-
-namespace STLParser
+﻿namespace STLParser
 {
     public sealed class StlFile
     {

@@ -1,5 +1,4 @@
-﻿using BaseTypes;
-using System.Numerics;
+﻿using System.Numerics;
 
 namespace STLParser;
 

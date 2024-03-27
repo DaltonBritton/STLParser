@@ -1,9 +1,18 @@
 ﻿namespace STLParser
 {
+    /// <summary>
+    /// provides functionality for parsing STL (stereolithography) files, supporting binary formats.
+    /// It includes methods for reading and writing STL files, enabling seamless integration into your C# projects.
+    /// </summary>
     public sealed class StlFile
     {
         private readonly byte[] _header = new byte[80];
-        public uint NumTriangles { get; }
+
+        /// <summary>
+        /// The number of triangles created in the file.
+        /// </summary>
+        public readonly uint NumTriangles;
+        
         private readonly Triangle[] _triangles;
 
         /// <summary>
@@ -16,7 +25,6 @@
         /// <exception cref="ArgumentException">Thrown in the event the contents of the <paramref name="inputStream"/> could not be read.</exception>
         public StlFile(Stream inputStream)
         {
-            inputStream.Position = 0;
             using BinaryReader reader = new(inputStream);
             
             // Read Header
@@ -44,6 +52,10 @@
             NumTriangles = (uint) _triangles.Length;
         }
 
+        /// <summary>
+        /// Saves the STLFile to an <paramref name="outputStream"/>
+        /// </summary>
+        /// <param name="outputStream">The stream to save the STLFile to.</param>
         public void SaveFile(Stream outputStream)
         {
             BinaryWriter writer = new(outputStream);

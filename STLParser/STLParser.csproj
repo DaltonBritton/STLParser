@@ -13,6 +13,7 @@
         <Copyright>Copyright (c) 2024 Dalton Britton</Copyright>
         <PackageReadmeFile>README.md</PackageReadmeFile>
         <GenerateDocumentationFile>True</GenerateDocumentationFile>
+        <Version>1.0.1</Version>
     </PropertyGroup>
 
     <ItemGroup>

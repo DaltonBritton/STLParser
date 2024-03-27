@@ -55,6 +55,9 @@ public class StlFileTest
         MemoryStream outputStream = new MemoryStream(new byte[1024]);
         stlFile1.SaveFile(outputStream);
 
+        // Return to Beginning of stream
+        outputStream.Position = 0;
+
         // Read Saved File
         StlFile stlFile2 = new StlFile(outputStream);
         
@@ -70,8 +73,9 @@ public class StlFileTest
 
             Assert.IsTrue(expectedTriangles.Remove(triangle));
         }
-
     }
+
+
     
     
 }

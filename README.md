@@ -2,7 +2,6 @@
 This C# library provides functionality for parsing STL (stereolithography) files, supporting binary formats. It includes methods for reading and writing STL files, enabling seamless integration into your C# projects.
 
 ## Features
-* STL Parsing: Supports parsing of both ASCII and binary STL files.
 * Binary STL Read/Write: Allows reading and writing of STL files in binary format.
 * Easy Integration: Simple-to-use methods for integrating STL parsing capabilities into your C# applications.
 

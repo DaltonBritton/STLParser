@@ -61,8 +61,13 @@ public struct Triangle
         if (p1 == p2 || p1 == p3 || p2 == p3)
             throw new ArgumentException("Triangles cannot have duplicate points.");
         
+        const float maxValidNormalDistance = 0.0001f;
+
+        normal = Vector3.Normalize(normal);
         Vector3 validNormalDirection = GenerateValidNormal(p1, p2, p3);
-        if(normal != validNormalDirection && normal !=-validNormalDirection)
+        float validNormalDistance = (normal - validNormalDirection).Length();
+        
+        if(validNormalDistance is >= maxValidNormalDistance and <= 2 - maxValidNormalDistance)
             throw new ArgumentException($"Invalid normal provided. Expected {validNormalDirection} or {-validNormalDirection}, got {normal}.");
         
         P1 = p1;
